@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    
+	<bean id="student" class="com.DanskeIt.Example.Student" autowire="constructor">
+	<constructor-arg name="name" value="Ranjini"></constructor-arg>
+	<constructor-arg name="id" value="RANS0001"></constructor-arg>
+	</bean>
+	
+	<bean id="hostel" class="com.DanskeIt.Example.Hostel" >
+	<property name="hostelName" value="Women's Hostel"></property>
+	<property name="city" value="Bangalore"></property>
+	</bean>
+</beans>
